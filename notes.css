@@ -1,0 +1,85 @@
+/*
+	Theme colors:
+	
+	background blue: #3d57ff
+		darker accent: #183981
+*/
+
+body {
+	margin: 0px;
+}
+
+#app-container {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background-color: #3d57ff;
+}
+
+#app-container * {
+	color: #dbdbdb;
+	font-size: 14pt;
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+#app-container > div {
+	padding: 10px;
+}
+
+#notes-list-sidebar {
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
+}
+
+#notes-list-sidebar-container {
+	flex-grow: 1;
+}
+
+#notes-list-sidebar-container * {
+	background-color: #183981;
+}
+
+#notes-list-sidebar button {
+	border: none;
+	padding: 10px;
+	width: 100%;
+	flex-shrink: 0;
+	flex-grow: 0;
+	background-color: #183981;
+}
+
+#note-editor {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
+}
+
+#note-editor * {
+	background-color: #183981;
+	padding: 10px;
+	display: block;
+	width: 100%;
+	border: none;
+	margin-bottom: 10px;
+}
+
+#edit-node-body {
+	flex-grow: 1;
+	font-size: 12pt;
+	margin-bottom: 0px;
+}
+
+#edit-note-title {
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+
+.rounded {
+	border-radius: 3px;
+}
