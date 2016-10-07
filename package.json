@@ -4,12 +4,13 @@
   "description": "a simple note-taking application written on top of express with react ui",
   "main": "app.js",
   "scripts": {
-	"start": "webpack-dev-server",
+    "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adam Tobey",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
   }

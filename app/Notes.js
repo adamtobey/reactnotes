@@ -17,23 +17,31 @@ import Note from './note/Note.js'
 export default class Notes extends React.Component {
 	constructor() {
 		super()
-		this.notes = this.fetchNotes()
+		this.setState({
+			notes: []
+		})
 		this.editing = new Note()
 	}
 
+	/*
+		Fetch the list of notes from the server and update this componenent's state
+	*/
 	fetchNotes() {
 		// TODO
-		return []
+		let notes = []
+		this.setState({
+			notes: notes
+		})
 	}
 
-	addNote(note) {
-		// TODO
+	saveNotes() {
+
 	}
 
 	render() {
 		return (
 			<div id="app-container">
-				<NotesSidebar notes={this.notes} />
+				<NotesSidebar notes={this.state.notes} />
 				<NotesEditor editing={this.editing} />
 			</div>
 		)
